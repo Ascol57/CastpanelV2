@@ -1,0 +1,8 @@
+:root {
+    --baseColor: 50;
+    --dark-gray: hsl(var(--baseColor), 10%, 20%);
+    --light-gray: hsl(var(--baseColor), 10%, 60%);
+    --light-yellow: hsl(var(--baseColor), 100%, 80%);
+    --yellow: hsl(var(--baseColor), 100%, 50%);
+    --dark-yellow: hsl(var(--baseColor), 100%, 30%);
+}
