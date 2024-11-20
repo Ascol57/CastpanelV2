@@ -1,6 +1,6 @@
 const { app, BrowserWindow } = require('electron')
-const { updateElectronApp } = require('update-electron-app')
-updateElectronApp()
+
+const { autoUpdater } = require("electron-updater")
 
 const createWindow = () => {
     const win = new BrowserWindow({
@@ -10,6 +10,7 @@ const createWindow = () => {
     })
 
     win.loadFile('public/loading.html')
+    autoUpdater.checkForUpdatesAndNotify()
 }
 
 app.whenReady().then(() => {
