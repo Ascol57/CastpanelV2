@@ -1,20 +1,16 @@
 {
-  "name": "castpanel",
-  "version": "1.5.0",
+  "name": "castpanel-project",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js"
   },
-  "author": "Ascol57",
+  "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "electron": "^33.2.0",
-    "update-electron-app": "^3.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Ascol57/CastpanelV2.git"
+    "@electron/packager": "^18.3.6",
+    "electron-winstaller": "^5.4.0"
   }
 }
