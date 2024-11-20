@@ -15,10 +15,15 @@ const loadApp = () => {
     win.close()
 
     Mwin = new WindowManager({
+        title: "CastPanel",
         width: 800,
         height: 600,
-        frame: false,
-        resizable: true
+        titleBarStyle: 'hidden',
+        titleBarOverlay: {
+            color: '#19171c',
+            symbolColor: '#efeff1',
+            height: 30
+        }
     })
 }
 
