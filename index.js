@@ -1,8 +1,8 @@
-const { app, BrowserWindow, ipcMain } = require('electron')
-const { autoUpdater } = require("electron-updater")
+const { app, BrowserWindow, ipcMain } = require('electron') *
+const { checkForUpdates } = require('./core/Updater')
 const WindowManager = require('./core/WindowManager')
 
-const loadApp = () => {
+const loadApp = async () => {
     const win = new BrowserWindow({
         width: 300,
         height: 400,
@@ -16,10 +16,8 @@ const loadApp = () => {
     })
 
     win.loadFile('public/loading.html')
-    autoUpdater.checkForUpdatesAndNotify()
-    setTimeout(() => {
-        win.webContents.send('loading:App:loadingfinished')
-    }, 0)
+    await checkForUpdates()
+    win.webContents.send('loading:App:loadingfinished')
 
     ipcMain.on('loading:Client:loadingfinished', () => {
         Mwin = new WindowManager({
