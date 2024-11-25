@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [ubuntu-latest, windows-latest]
 
     steps:
       - name: Check out Git repository
@@ -42,8 +42,14 @@ jobs:
           filename: 'release.zip'
           exclusions: '*.git* release.zip /*node_modules/* *.vscode*'
           
+      - name: Get version from package.json
+        id: get_version
+        run: echo ::set-output name=VERSION::$(node -p "require('./package.json').version")
+          
       - name: Upload Release
         uses: ncipollo/release-action@v1.12.0
         with:
           artifacts: "release.zip"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.APItoken }}
+          tag: v${{ steps.get_version.outputs.VERSION }}
+          draft: true
