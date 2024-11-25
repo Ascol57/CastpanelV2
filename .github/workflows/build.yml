@@ -40,7 +40,7 @@ jobs:
         with:
           type: 'zip'
           filename: 'release.zip'
-          exclusions: '*.git* release.zip /*node_modules/* */.vscode*'
+          exclusions: '*.git* release.zip /*node_modules/* *.vscode*'
           
       - name: Upload Release
         uses: ncipollo/release-action@v1.12.0
