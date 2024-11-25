@@ -34,5 +34,5 @@ jobs:
         uses: thedoctor0/zip-release@0.7.5
         with:
           type: 'zip'
-          filename: ${{ "release-"+runner.os+".zip" }}
+          filename: ${{ 'release-' + runner.os + '.zip' }}
           exclusions: '*.git* */.vscode*'
