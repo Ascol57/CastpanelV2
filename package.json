@@ -23,15 +23,6 @@
   "build": {
     "appId": "com.ascol57.castpanel",
     "productName": "Castpanel",
-    "win": {
-      "target": "nsis"
-    },
-    "linux": {
-      "target": "AppImage"
-    },
-    "mac": {
-      "target": "dmg"
-    },
     "asar": false,
     "nsis": {
       "oneClick": false,
