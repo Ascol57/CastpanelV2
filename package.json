@@ -4,20 +4,13 @@
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder",
-    "asar": false,
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true,
-      "createDesktopShortcut": true
-    }
+    "build": "electron-builder"
   },
   "author": "Ascol57",
   "license": "ISC",
   "description": "test",
   "dependencies": {
-    "castpanel": "file:",
-    "electron-updater": "^6.3.9"
+    "castpanel": "file:"
   },
   "devDependencies": {
     "electron": "33.2.0",
@@ -26,5 +19,39 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Ascol57/CastpanelV2.git"
+  },
+  "build": {
+    "appId": "com.ascol57.castpanel",
+    "productName": "Castpanel",
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "asar": false,
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true
+    },
+    "files": [
+      "**/*",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/node_modules/*.d.ts",
+      "!**/node_modules/.bin",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,xproj}",
+      "!.editorconfig",
+      "!**/._*",
+      "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}",
+      "!**/{__pycache__,thumbs.db,.flowconfig,.idea,.vs,.nyc_output}",
+      "!**/{appveyor.yml,.travis.yml,circle.yml}",
+      "!**/{npm-debug.log,yarn.lock,.yarn-integrity,.yarn-metadata.json}",
+      "!.vscode/*"
+    ]
   }
 }
