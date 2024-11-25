@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require('electron') *
+const { app, BrowserWindow, ipcMain } = require('electron')
 const { checkForUpdates } = require('./core/Updater')
 const WindowManager = require('./core/WindowManager')
 

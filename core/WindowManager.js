@@ -54,7 +54,7 @@ module.exports = class WindowManager {
             this.view2.webContents.loadFile('public/settings.html')
         } else if (this.currentPage == 'store') {
             console.log('Load store')
-            this.view2.webContents.loadURL('https://floorp.app/')
+            this.view2.webContents.loadURL('https://github.com/')
         }
     }
 
