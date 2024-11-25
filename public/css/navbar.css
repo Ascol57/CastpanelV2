@@ -1,0 +1,78 @@
+:root {
+    --icon-width: 100px;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.space {
+    width: 90px;
+    height: 58px;
+    background-color: red;
+}
+
+nav {
+    position: relative;
+    background-color: var(--dark-gray);
+    border-radius: 8px;
+    font-size: 0;
+    display: flex;
+    width: calc(var(--icon-width) * 3);
+    justify-content: center;
+}
+
+nav a {
+    width: var(--icon-width);
+    font-size: 50px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+nav .animation {
+    background-color: var(--blue);
+    position: absolute;
+    height: 110%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 0 0 8px 8px;
+}
+
+nav.start-home .animation,
+a:nth-child(1):hover~.animation {
+    width: var(--icon-width);
+    left: 0;
+}
+
+nav.start-store .animation,
+a:nth-child(2):hover~.animation {
+    width: var(--icon-width);
+    left: var(--icon-width);
+}
+
+nav.start-settings .animation,
+a:nth-child(3):hover~.animation {
+    width: var(--icon-width);
+    left: calc(var(--icon-width) * 2);
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: var(--light-gray);
+    z-index: -1;
+    top: 58px;
+}

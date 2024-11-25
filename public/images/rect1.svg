@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient14">
+      <stop
+         style="stop-color:#00aaff;stop-opacity:1;"
+         offset="0"
+         id="stop14" />
+      <stop
+         style="stop-color:#00aaff;stop-opacity:0;"
+         offset="1"
+         id="stop15" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient11">
+      <stop
+         style="stop-color:#00aaff;stop-opacity:1"
+         offset="0"
+         id="stop11" />
+      <stop
+         style="stop-color:#00aaff;stop-opacity:0;"
+         offset="1"
+         id="stop12" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5">
+      <stop
+         style="stop-color:#00aaff;stop-opacity:1;"
+         offset="0"
+         id="stop5" />
+      <stop
+         style="stop-color:#00aaff;stop-opacity:0;"
+         offset="1"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient5"
+       id="linearGradient6"
+       x1="123.46332"
+       y1="75.301163"
+       x2="64.216217"
+       y2="135.69498"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient11"
+       id="linearGradient10"
+       x1="68.420853"
+       y1="141.04634"
+       x2="133.0193"
+       y2="61.540554"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient14"
+       id="linearGradient15"
+       x1="152.13127"
+       y1="49.430607"
+       x2="65.492287"
+       y2="142.69702"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke-width:3.57494;stroke-opacity:0"
+       id="rect1"
+       width="200"
+       height="200"
+       x="0"
+       y="0"
+       ry="0" />
+    <path
+       d="m 125.00012,137.50013 c 0,-34.62496 -27.875094,-62.500057 -62.500059,-62.500057 v 26.563237 c 17.619438,4.50298 31.433849,18.31739 35.936825,35.93682 z"
+       style="fill:url(#linearGradient6);fill-opacity:1;stroke-width:7.03354;stroke-opacity:0"
+       id="path4" />
+    <path
+       d="m 0,25.000024 v 25.000025 h 25.000024 1.172022 48.828027 c 41.549707,0 75.000077,33.450364 75.000077,75.000071 v 48.82803 1.17202 25.00003 h 25.19484 v -87.50009 h -0.19482 c 0,-48.474661 -39.02542,-87.500086 -87.500085,-87.500086 z"
+       style="fill:url(#linearGradient15);stroke-width:3.06415;stroke-opacity:0"
+       id="path3" />
+    <path
+       d="m 26.172046,50.000049 c -0.394454,0.387056 -0.784966,0.777567 -1.172022,1.172021 v 17.851624 5.976379 h 37.500037 c 34.624758,0 62.500059,27.875307 62.500059,62.500057 v 37.50004 h 5.97638 17.85162 c 0.3945,-0.38709 0.78494,-0.77753 1.17203,-1.17202 v -48.82803 c 0,-41.549707 -33.45037,-75.000071 -75.000077,-75.000071 z"
+       style="fill:url(#linearGradient10);fill-opacity:1;stroke-width:2.31628;stroke-opacity:0"
+       id="path2" />
+    <path
+       d="m 50.000049,100.0001 c -10.78339,0 -20.723587,3.41153 -28.873173,9.1736 -8.542693,6.04 -15.0758466,14.68559 -18.4805259,24.81295 -0.5259379,1.56443 -1.0023816,3.15027 -1.3740763,4.78059 -0.40043621,1.75639 -0.71069659,3.54704 -0.92190759,5.3697 C 0.1274326,146.06076 0,148.01461 0,150.00015 c 0,27.69986 22.300187,50.00005 50.000049,50.00005 1.98614,0 3.940372,-0.12782 5.864758,-0.35089 1.822532,-0.21126 3.612921,-0.52145 5.369181,-0.92191 1.629898,-0.37164 3.215522,-0.84826 4.779554,-1.37407 6.36308,-2.1392 12.130546,-5.51711 17.048571,-9.85315 10.376698,-9.14873 16.937987,-22.51512 16.937987,-37.50003 0,-4.31943 -0.542798,-8.50728 -1.563214,-12.50002 -4.502931,-17.61926 -18.317563,-31.43389 -35.936825,-35.93682 -3.9927,-1.02041 -8.180619,-1.56321 -12.500012,-1.56321 z"
+       style="fill:#00aaff;fill-opacity:1;stroke-width:3.02777;stroke-opacity:0"
+       id="path5" />
+  </g>
+</svg>
